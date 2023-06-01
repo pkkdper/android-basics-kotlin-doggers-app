@@ -16,6 +16,7 @@
 package com.example.dogglers.adapter
 
 import android.content.Context
+import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
@@ -51,11 +52,20 @@ class DogCardAdapter(
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DogCardViewHolder {
-        // TODO: Use a conditional to determine the layout type and set it accordingly.
+        if(layout == 1 || layout == 2) {
+            val adapterLayout12 = LayoutInflater.from(parent.context)
+                .inflate(R.layout.vertical_horizontal_list_item, parent, false)
+            return DogCardViewHolder(adapterLayout12)
+        } else if (layout == 3){
+            val adapterLayout3 = LayoutInflater.from(parent.context)
+                .inflate(R.layout.vertical_horizontal_list_item, parent, false)
+            return DogCardViewHolder(adapterLayout3)
+        }
+        // Use a conditional to determine the layout type and set it accordingly.
         //  if the layout variable is Layout.GRID the grid list item should be used. Otherwise the
         //  the vertical/horizontal list item should be used.
 
-        // TODO Inflate the layout
+        // Inflate the layout
 
         // TODO: Null should not be passed into the view holder. This should be updated to reflect
         //  the inflated layout.
