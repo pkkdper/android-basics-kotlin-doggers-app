@@ -18,7 +18,13 @@ package com.example.dogglers.adapter
 import android.content.Context
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.TextView
+import androidx.annotation.DrawableRes
 import androidx.recyclerview.widget.RecyclerView
+import com.example.dogglers.R
+import com.example.dogglers.model.Dog
+import com.example.dogglers.data.DataSource
 
 /**
  * Adapter to inflate the appropriate list item layout and populate the view with information
@@ -29,13 +35,19 @@ class DogCardAdapter(
     private val layout: Int
 ): RecyclerView.Adapter<DogCardAdapter.DogCardViewHolder>() {
 
-    // TODO: Initialize the data using the List found in data/DataSource
-
-    /**
+    // Initialize the data using the List found in data/DataSource
+    private val dogDataList: List<Dog> = DataSource.dogs
+      /**
      * Initialize view elements
      */
     class DogCardViewHolder(view: View?): RecyclerView.ViewHolder(view!!) {
-        // TODO: Declare and initialize all of the list item UI components
+        // Declare and initialize all of the list item UI components
+        class DogCardViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
+            val textView1: TextView = view.findViewById(R.id.name)
+            val textView2: TextView = view.findViewById(R.id.age)
+            val textView3: TextView = view.findViewById(R.id.hobby)
+            val imageView: ImageView = view.findViewById(R.id.image)
+        }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DogCardViewHolder {
