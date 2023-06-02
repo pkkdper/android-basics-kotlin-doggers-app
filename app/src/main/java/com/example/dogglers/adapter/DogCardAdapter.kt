@@ -78,8 +78,8 @@ class DogCardAdapter(
         // Set the image resource for the current dog
         holder.imageView.setImageResource(data.imageResourceId)
         // Set the text for the current dog's name
-        holder.textView1.text = resources?.getString(R.string.dog_name)
-        holder.textView2.text = resources?.getString(R.string.dog_age)
+        holder.textView1.text = data.name
+        holder.textView2.text = "Age:${data.age}"
         holder.textView3.text = resources?.getString(R.string.dog_hobbies, data.hobbies)
         // TODO: Set the text for the current dog's hobbies by passing the hobbies to the
         //  R.string.dog_hobbies string constant.

@@ -50,22 +50,30 @@
             android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/image"/>
+
         <TextView
             android:id="@+id/age"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="168dp"
+            android:layout_height="24dp"
             android:layout_margin="8dp"
+            android:layout_marginTop="8dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/name"/>
+            app:layout_constraintTop_toBottomOf="@+id/name" />
+
         <TextView
             android:id="@+id/hobby_g"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:Of="@id/age"
+            android:layout_width="197dp"
+            android:layout_height="70dp"
             android:layout_margin="8dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/age"/>
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/age"
+            app:layout_constraintTop_toBottomOf="@+id/name" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
