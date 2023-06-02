@@ -41,22 +41,20 @@ class DogCardAdapter(
       /**
      * Initialize view elements
      */
-    class DogCardViewHolder(view: View?): RecyclerView.ViewHolder(view!!) {
-        // Declare and initialize all of the list item UI components
-        class DogCardViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
+    class DogCardViewHolder(private val view: View): RecyclerView.ViewHolder(view) {
+              // Declare and initialize all of the list item UI components
             val textView1: TextView = view.findViewById(R.id.name)
             val textView2: TextView = view.findViewById(R.id.age)
             val textView3: TextView = view.findViewById(R.id.hobby)
             val imageView: ImageView = view.findViewById(R.id.image)
-        }
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DogCardViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DogCardAdapter.DogCardViewHolder {
         if(layout == 1 || layout == 2) {
             val adapterLayout12 = LayoutInflater.from(parent.context)
                 .inflate(R.layout.vertical_horizontal_list_item, parent, false)
             return DogCardViewHolder(adapterLayout12)
-        } else if (layout == 3){
+        } else {
             val adapterLayout3 = LayoutInflater.from(parent.context)
                 .inflate(R.layout.vertical_horizontal_list_item, parent, false)
             return DogCardViewHolder(adapterLayout3)
@@ -67,19 +65,22 @@ class DogCardAdapter(
 
         // Inflate the layout
 
-        // TODO: Null should not be passed into the view holder. This should be updated to reflect
+        // Null should not be passed into the view holder. This should be updated to reflect
         //  the inflated layout.
-        return DogCardViewHolder(null)
     }
 
-    override fun getItemCount(): Int = 0 // TODO: return the size of the data set instead of 0
+    override fun getItemCount() = dogDataList.size // return the size of the data set instead of 0
 
     override fun onBindViewHolder(holder: DogCardViewHolder, position: Int) {
-        // TODO: Get the data at the current position
-        // TODO: Set the image resource for the current dog
-        // TODO: Set the text for the current dog's name
-        // TODO: Set the text for the current dog's age
         val resources = context?.resources
+        // Get the data at the current position
+        val data = dogDataList[position]
+        // Set the image resource for the current dog
+        holder.imageView.setImageResource(data.imageResourceId)
+        // Set the text for the current dog's name
+        holder.textView1.text = resources?.getString(R.string.dog_name)
+        holder.textView2.text = resources?.getString(R.string.dog_age)
+        holder.textView3.text = resources?.getString(R.string.dog_hobbies, data.hobbies)
         // TODO: Set the text for the current dog's hobbies by passing the hobbies to the
         //  R.string.dog_hobbies string constant.
         //  Passing an argument to the string resource looks like:
