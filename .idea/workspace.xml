@@ -9,7 +9,15 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9343fa92-9eee-4769-b3f8-1f10cc5e8dd4" name="Changes" comment="problems with xlmns on grid_list_item.xml" />
+    <list default="true" id="9343fa92-9eee-4769-b3f8-1f10cc5e8dd4" name="Changes" comment="problems with xlmns on grid_list_item.xml but works in vertical_horizontal_list_item.xml">
+      <change beforePath="$PROJECT_DIR$/.gradle/8.0/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.0/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.0/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/grid_list_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/grid_list_item.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,6 +66,14 @@
         </projects_view>
       </state>
     </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin File" />
+        <option value="layoutResourceFile" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -328,7 +344,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685988801630</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="problems with xlmns on grid_list_item.xml but works in vertical_horizontal_list_item.xml">
+      <created>1685988878520</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1685988878520</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -352,6 +375,7 @@
     <MESSAGE value="fixed problem with name - it didn't exist in strings resources" />
     <MESSAGE value="problem with info displayed on grid layout (overlay)" />
     <MESSAGE value="problems with xlmns on grid_list_item.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="problems with xlmns on grid_list_item.xml" />
+    <MESSAGE value="problems with xlmns on grid_list_item.xml but works in vertical_horizontal_list_item.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="problems with xlmns on grid_list_item.xml but works in vertical_horizontal_list_item.xml" />
   </component>
 </project>
